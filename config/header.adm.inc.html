@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, nofollow">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../../materialize/css/materialize.min.css" rel="stylesheet">
+    <title>Administrador</title>
+    <style>
+        .responsive {
+            max-height: 65px;
+            max-width: 1250px;
+        }
+    </style>
+    <script>
+        function confirm_click(id){
+            if(confirm("Tem certeza que deseja excluir?")){
+                location.href = "../../database/ADM/delete.php?id="+id;
+            }else{
+                alert("Cancelado.");
+            }
+        }
+    </script>
+
+</head>
+<body>
+        <nav class="blue-grey">
+            <div class="nav-wrapper container">
+                <a href="adm.php" class="brand-logo light"><img src="../../imagens/logo.png" class="responsive"></a>
+                    <ul class="right">
+                        <li> <a href="../../public/adm/cadastro.php"> <i class="material-icons left">person_add</i>Cadastro </a> </li>
+                        <li> <a href="../../forms/form-login/logout.php" class="red"> SAIR </a> </li>
+                    </ul>
+            </div>
+        </nav>

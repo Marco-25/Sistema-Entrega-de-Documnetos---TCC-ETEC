@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, nofollow">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../../materialize/css/materialize.min.css" rel="stylesheet">
+    <title>Aluno</title>
+    <style>
+       .responsive {
+            max-height: 65px;
+            max-width: 1250px;
+        }
+        .ima{
+            max-height: 105px;
+        }
+        .bolder{
+            font-weight: bolder;
+        }
+        #imagem{
+
+            width: 200px;
+            height: 100px;
+            visibility: hidden;
+            box-shadow: 0 0 0 0 rgba(0,0,0.1);
+            background-color: #dddddd;
+            border: solid 1px black;
+            border-radius: 10px;
+            position: absolute;
+            left: 100px;
+            z-index: 100;
+
+        }
+    </style>
+    <script type="text/javascript">
+  
+        function mostrar(){
+            document.getElementById("imagem").style.visibility = "visible";            
+        }
+        function esconder(){
+            document.getElementById("imagem").style.visibility = "hidden";            
+        }
+        </script>
+</head>
+<body>
+    <nav class="blue-grey">
+        <div class="nav-wrapper container">
+           <img src="../../imagens/logo.png" class="responsive">
+        </div>
+    </nav>
